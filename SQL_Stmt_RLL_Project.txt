@@ -1,0 +1,64 @@
+SQL Statement for Admin Table
+
+CREATE TABLE `admin` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `password` varchar(255) DEFAULT NULL,
+  `username` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+)
+
+
+-------------------------------------------------------
+SQL Statement for Faculty Table
+
+CREATE TABLE `faculty` (
+  `id` int NOT NULL,
+  `department` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `mobile` int NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `username` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) 
+
+
+---------------------------------------------------------
+SQL Statement for Student Table
+
+CREATE TABLE `student` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `batch` varchar(255) DEFAULT NULL,
+  `department` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `mobile` int DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `username` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+)
+
+----------------------------------------------------------
+SQL Statement for TimeTable Table
+
+CREATE TABLE `timetables` (
+  `id` int NOT NULL,
+  `batch` varchar(255) DEFAULT NULL,
+  `department` varchar(255) DEFAULT NULL,
+  `session1` varchar(255) DEFAULT NULL,
+  `session2` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) 
+
+-----------------------------------------------------------
+SQL Statement for Result Table
+
+CREATE TABLE `result` (
+  `rid` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `percentage` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`rid`)
+)
+
+
+------------------------------------------------------------
